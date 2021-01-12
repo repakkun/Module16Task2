@@ -11,11 +11,12 @@ namespace Module16Task2
     {          
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите путь до папки");
-            string folderName = Console.ReadLine();
-            DirectoryInfo directoryInfo = new DirectoryInfo(folderName);               
+                        
             try
-            {              
+            { 
+                Console.WriteLine("Введите путь до папки");
+                string folderName = Console.ReadLine();
+                DirectoryInfo directoryInfo = new DirectoryInfo(folderName);                
                 Console.WriteLine($"Размер = {DirectorySize(directoryInfo)}");        
             }
             catch (Exception ex)
